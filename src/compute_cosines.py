@@ -18,7 +18,6 @@ def process(path):
 def returnCSV(data):
 	data.to_csv('output.csv')
 
-ouputData = process(filePath)
-returnCSV(outputData)
+returnCSV(process(filePath))
 	
 
