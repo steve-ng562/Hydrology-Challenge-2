@@ -1,0 +1,14 @@
+environment:
+
+  matrix:
+    - PYTHON: "C:\\Python36-x64"
+
+install:
+  - "%PYTHON%\\python.exe -m pip install pandas"
+  - "%PYTHON%\\python.exe -m pip install pytest"
+
+build: off
+
+test_script:
+  - ps: sh tst/tst_dwnl.sh
+  - ps: sh tst/tst_repr.sh

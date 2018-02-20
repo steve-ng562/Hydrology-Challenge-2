@@ -1,0 +1,14 @@
+language: generic
+
+os: 
+  - linux
+  - osx
+
+install: 
+  - pip install pandas
+
+script: 
+  - ./tst/tst_dwnl.sh
+  - ./tst/tst_repr.sh
+
+
