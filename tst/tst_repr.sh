@@ -1,4 +1,4 @@
 #!/bin/bash
 
 python ./src/compute_cosines.py 
-python ./tst_comp_csv.py 
+python ./tst/tst_comp_csv.py 
