@@ -1,7 +1,7 @@
 import pandas as pd
 import math
 
-filePath = 'tst/angles_UCI_CS.csv'
+filePath = './tst/angles_UCI_CS.csv'
 
 
 def process(path):

@@ -1,7 +1,7 @@
 import pandas as pd 
 
-outputPath = 'src/output.csv'
-testPath = 'angles_UCI_CS_out.csv'
+outputPath = './src/output.csv'
+testPath = './tst/angles_UCI_CS_out.csv'
 
 def readCSVFile(outPath):
 	output = pd.read_csv(outPath, skipinitialspace =True)
