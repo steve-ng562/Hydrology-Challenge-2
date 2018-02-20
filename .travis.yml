@@ -6,6 +6,10 @@ os:
   - linux
   - osx
 
+before_install:
+  - chmod +x tst_dwnl.sh
+  - chmod +x tst_repr.sh
+
 install: 
   - pip install pandas
 
