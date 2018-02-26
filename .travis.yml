@@ -6,7 +6,7 @@ matrix:
   - os: osx
   - os: linux
   language: generic
-  env: PYTHON=3.5.1
+  env: PYTHON=3.6.1
 
 before_install:
   - chmod +x ./tst/tst_dwnl.sh
