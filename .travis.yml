@@ -1,11 +1,11 @@
 language: generic
 
 matrix:
-  include:
-    - os: linux
-    sudo: required
-    - os: osx
-  
+    include:
+            - os: linux
+              sudo: required
+            - os: osx
+
 
 before_install:
   - chmod +x ./tst/tst_dwnl.sh
