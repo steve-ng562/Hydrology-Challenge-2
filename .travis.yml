@@ -1,13 +1,10 @@
-language: python
-python:
-  - "3.5"
+language: generic
 
-os: 
-  - linux
 
 matrix:
   include:
   - os: osx
+  - os: linux
   language: generic
   env: PYTHON=3.5.1
 
