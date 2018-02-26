@@ -5,7 +5,7 @@ matrix:
   include:
   - os: osx
   - os: linux
-  language: generic
+    sudo: required
   
 
 before_install:
