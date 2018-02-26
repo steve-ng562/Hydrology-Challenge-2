@@ -11,10 +11,8 @@ before_install:
   - chmod +x ./tst/tst_dwnl.sh
   - chmod +x ./tst/tst_repr.sh
 
-  - if [ "$TRAVIS_OS_NAME" == "linux" ]; 
-     then apt-get --version ; fi
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; 
-  then sudo apt-get install -y $(grep -vE '(^#|^$)' requirements.apt) ; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then apt-get --version ; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install -y $(grep -v -E '(^#|^$)' requirements.apt) ; fi
     
 
      #osx
