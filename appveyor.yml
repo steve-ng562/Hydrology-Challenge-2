@@ -6,9 +6,10 @@ environment:
 install:
   - "%PYTHON%\\python.exe -m pip install pandas"
   - "%PYTHON%\\python.exe -m pip install pytest"
+  - cmd: wget http://rapid-hub.org/data/angles_UCI_CS.csv
+  - cmd: wget http://rapid-hub.org/data/angles_UCI_CS_out.csv
 
 build: off
 
 test_script:
-  - ps: sh tst/tst_dwnl.sh
   - ps: sh tst/tst_repr.sh
